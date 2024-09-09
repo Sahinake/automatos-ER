@@ -3,7 +3,7 @@
 // Função para verificar o padrão (001 | 00101)
 int match_part1(const char *str, int *pos) {
     int i = *pos;
-    if (str[i] == '0' && str[i + 1] == '0' && str[i + 2] == '1' && str[i + 3] == '0' && str[i + 4] == '1') {
+    if (str[i] == '0' && str[i + 1] == '0' && str[i + 2] == '1' && str[i + 3] == '0' && str[i + 4] == '1' && str[i + 5] != '1') {
         *pos = i + 5;
         return 1;
     }
